@@ -327,11 +327,7 @@ input:checked + .slider:before {
   }
 
   .card {
-    width: 25rem; /* Adjust width to account for padding */
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
+    width: 25rem; 
     margin: 0 auto;
   }
 
@@ -340,7 +336,7 @@ input:checked + .slider:before {
   }
 
   .statistics {
-    width: 60%;
+    width: 25rem; 
     margin: 0 auto;
   }
 }
@@ -351,5 +347,8 @@ input:checked + .slider:before {
   }
   .social-media-dashboard {
     font-size: 1.9rem;
+  }
+  .statistics{
+    width: 95%;
   }
 }
