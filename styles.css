@@ -216,6 +216,12 @@ input:checked + .slider:before {
   grid-template-rows: auto auto auto auto;
 }
 
+.card-top svg {
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+}
+
+
 .card-top {
   display: flex;
   justify-content: center;
@@ -249,6 +255,11 @@ input:checked + .slider:before {
   translate: 0 -20px;
 }
 
+.card-bottom svg {
+  width: 8px; /* Adjust size as needed */
+  height: 4px; /* Adjust size as needed */
+}
+
 .follower-increase {
   color: var(--lime-green);
 }
@@ -279,12 +290,24 @@ input:checked + .slider:before {
   color: var(--accent-2);
 }
 
+.overview-card-top svg {
+  height: 20px;
+  width: 20px;
+
+}
+
 .overview-card-bottom {
   display: flex;
   justify-content: space-between;
   font-weight: 500;
 
   margin-top: 1em;
+}
+
+.overview-card-bottom svg {
+  height: 4px;
+  width: 8px;
+
 }
 
 .overview-number {
