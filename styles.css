@@ -37,16 +37,7 @@
 }
 
 .dark-mode {
-  --very-dark-blue-bg: hsl(230, 17%, 14%);
-  --very-dark-blue-top-bg: hsl(232, 19%, 15%);
-
-  --body-background-color: linear-gradient(
-    to bottom,
-    var(--very-dark-blue-top-bg) 0%,
-    var(--very-dark-blue-top-bg) 35%,
-    var(--very-dark-blue-bg) 35%,
-    var(--very-dark-blue-bg) 100%
-  );
+  --body-background-color: var(--very-dark-blue-top-bg);
   --card-background-color: var(--dark-desaturated-blue-card-bg);
   --accent-1: var(--white-text);
   --accent-2: var(--desaturated-blue-text);
@@ -59,16 +50,7 @@
 }
 
 .light-mode {
-  --body-background-color: linear-gradient(
-    to bottom,
-    var(--very-pale-blue-top-bg) 0%,
-    var(--very-pale-blue-top-bg) 35%,
-    var(--white-bg) 35%,
-    var(--white-bg) 100%
-  );
-
-  --white-bg: hsl(0, 0%, 100%);
-  --very-pale-blue-top-bg: hsl(225, 100%, 98%);
+  --body-background-color: var(--white-bg);
   --card-background-color: var(--light-grayish-blue-card-bg);
   --accent-2: var(--dark-grayish-blue-text);
   --accent-1: var(--very-dark-blue-text);
@@ -84,9 +66,10 @@
 }
 
 body {
-  background-image: var(--body-background-color);
+  background-color: var(--body-background-color); 
   background-repeat: no-repeat;
   min-height: 100svh;
+  overflow: hidden;
 }
 
 /* Header Styling */
@@ -97,7 +80,6 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  margin-top: 1em;
 }
 
 .social-media-dashboard {
@@ -327,11 +309,10 @@ input:checked + .slider:before {
   .dashboard{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
   .header {
     display: grid;
     grid-template-columns: auto;
